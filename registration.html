@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Playball&family=Teko:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="./registration.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <img class="logo" src="./LOGO (2).png" alt="logo" />
+        <ul class="menu">
+          <li class="listed"><a href="index.html">About</a></li>
+          <li class="listed">
+            <a href="contact.html" target="_self">Contact</a>
+          </li>
+          <li class="listed">
+            <a href="registration.html" target="_self">Registration</a>
+          </li>
+          <li class="listed"><a href="login.html" target="_self">Login</a></li>
+          </div>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="container">
+        <h1>Registration Form</h1>
+        <form class="registration-form">
+          <div class="name">
+            <label for="firstname"
+              >First name:
+              <input type="text" id="firstname" name="firstname" placeholder="Enter your first name"  required
+            /></label>
+          </div>
+          <div class="name name-1">
+            <label for="lastname"
+              >Last name:
+              <input type="text" id="lastname" name="lastname" placeholder="Enter your last name" required
+            /></label>
+          </div>
+          <label for="gender"
+            >Phone number:
+            <input type="tel" id="phonenumber" name="phonenumber" placeholder="Enter your number" required
+          /></label>
+          <p>Gender:</p>
+          <input type="radio" name="gender" id="gender" />
+          <label class="gender" for="gender">Male</label>
+          <br />
+          <input type="radio" name="gender" id="gender" />
+          <label class="gender" for="gender">Female</label>
+          <label class="country" for="country"
+            >Country: <input type="text" name="country" id="country" placeholder="Enter your country" required
+          /></label>
+          <label for="state/province"
+            >State/Province:
+            <input type="text" name="state/province" id="state/province" placeholder="Enter your state/province" required
+          /></label>
+          <label for="email"
+            >Email: <input type="email" name="email" id="email" placeholder="Enter your email"
+          /></label>
+          <label for="passwd"
+            >Password: <input type="password" name="passwd" id="passwd" placeholder="Enter your password" required
+          /></label>
+          <label for="passwd"
+            >Confirm password: <input type="password" id="passwd" name="passwd" placeholder="Confirm password" required
+          /></label>
+          <button class="register">Register</button>
+        </form>
+      </div>
+    </main>
+  </body>
+
+  <!-- footer -->
+  <footer>
+    <p>imagine_lilies | 2022</p>
+  </footer>
+</html>
