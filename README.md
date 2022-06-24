@@ -1,6 +1,8 @@
-# Zuri-training (HTML, CSS) Task 3
-First  attempt at creating a website with multiple pages
-This contains an about me page
-Registration page
-Contact page and
-Login page
+# Zuri-training
+Tasks given and completed from ZURIXI4G training
+
+---
+# License & Copyright
+
+©Lilian Balogun (imagine_lilies)
+
