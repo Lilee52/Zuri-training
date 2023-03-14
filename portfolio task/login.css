@@ -1,0 +1,253 @@
+body {
+  margin: 0%;
+  padding: 0%;
+  font-size: 18px;
+  font-family: sans-serif;
+  color: hsl(0, 44%, 10%);
+  background: linear-gradient(
+    360deg,
+    hsl(0, 86%, 86%),
+    hsl(0, 100%, 74%),
+    hsl(0, 43%, 73%),
+    hsl(0, 56%, 88%)
+  );
+}
+
+/* navbar styling */
+header {
+  left: 0;
+  top: 0;
+  position: fixed;
+  height: 55px;
+  width: 100%;
+  padding: 1em;
+  background: linear-gradient(
+    180deg,
+    hsl(0, 28%, 46%),
+    hsl(0, 43%, 75%),
+    hsl(0, 29%, 29%)
+  );
+}
+.logo {
+  width: 18%;
+  float: right;
+  font-size: 44px;
+  vertical-align: middle;
+  margin-left: 2em;
+  margin-top: -0.9em;
+}
+.menu li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 19px;
+  color: hsl(0, 44%, 10%);
+}
+a:active {
+  color: azure;
+}
+.listed a:hover {
+  color: gray;
+}
+.menu {
+  display: flex;
+  gap: 2em;
+  float: left;
+  margin-right: 10em;
+  margin-top: -1.5em;
+}
+.navbar {
+  display: flex;
+  margin: 4px 2px 4px 2px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+  flex-wrap: nowrap;
+}
+
+/* div & form styling */
+.container {
+  width: 350px;
+  height: 500px;
+  margin: 8em auto 3em auto;
+  border: 1px solid gray;
+  box-shadow: 0 0 5px black;
+  border-radius: 10px;
+  background-color: hsl(0, 86%, 86%);
+}
+input {
+  background-color: hsl(0, 32%, 29%);
+  color: wheat;
+}
+
+.form {
+  margin: 1em auto;
+  padding: 3em auto;
+}
+h3 {
+  text-align: center;
+  font-size: 26px;
+}
+input {
+  width: 85%;
+  min-height: 2em;
+}
+label,
+input {
+  margin: 0.5em 1.5em 1em 1.5em;
+}
+#checkbox {
+  width: auto;
+  vertical-align: middle;
+  margin: 1.7px 1px 1px 22px;
+}
+#remember {
+  margin: 0px 2px 1px 6px;
+  font-size: 14px;
+}
+#login {
+  margin: 10px 95px 12px 100px;
+  width: 40%;
+  height: 2vw;
+  border: none;
+  background-color: #471b13;
+  color: wheat;
+}
+#login:hover {
+  background-color: rgb(71, 66, 66);
+}
+button:hover {
+  opacity: 0.8;
+}
+.forget {
+  margin: 1em;
+  padding: 0.5em;
+  font-size: 14px;
+}
+p {
+  font-size: 16px;
+  text-align: center;
+}
+
+/*demacation "or"*/
+.line {
+  overflow: hidden;
+  text-align: center;
+  color: gray;
+}
+.line::before,
+.line::after {
+  background-color: gray;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 40%;
+}
+.line::before {
+  right: 0.1em;
+  margin-left: -45%;
+}
+.line::after {
+  left: 0.1em;
+  margin-right: -45%;
+}
+
+/* social icons */
+.social-icons {
+  width: fit-content;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  margin-left: 6.5em;
+  margin-top: 1.5em;
+}
+
+.fa {
+  padding: 15px;
+  font-size: 16px;
+  width: fit-content;
+  text-align: center;
+  text-decoration: none;
+  margin: 0px;
+  border-radius: 10px;
+  align-self: auto;
+  border-radius: 50%;
+}
+.fa-twitter {
+  background: #55acee;
+  color: white;
+}
+.fa-facebook {
+  background: #3b5998;
+  color: white;
+}
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+footer p {
+  background-color: #5c2117;
+  color: #ed553b;
+  margin-right: 65em;
+  margin-left: 5em;
+}
+
+/* media screen  */
+@media (max-width: 600px) {
+  body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .navbar {
+    font-size: 14px;
+    margin-right: -60%;
+  }
+  .logo {
+    width: 23%;
+    margin-right: 0.3em;
+    margin-top: -0.6em;
+    margin-left: -1.15em;
+    font-size: 34px;
+    margin-bottom: -2em;
+  }
+  a {
+    font-size: 16px;
+  }
+  .menu {
+    position: absolute;
+    margin-right: -30%;
+    margin-left: 8.5em;
+    margin-top: 4em;
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+  }
+  .contact {
+    width: 5.7em;
+    height: 2.5em;
+    margin-top: -1em;
+    margin-right: 12em;
+    margin-left: 0.5em;
+    margin-bottom: 0.5em;
+    box-shadow: 0 0 3px black;
+  }
+  .cont {
+    margin: 0.5em auto;
+  }
+  #login {
+    height: 24px;
+  }
+  footer p {
+    background-color: #5c2117;
+    color: #ed553b;
+    margin-right: 20em;
+    margin-left: 1em;
+  }
+}
